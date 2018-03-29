@@ -8,28 +8,34 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/style.css">
-   
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 </head>
 
 <body>
     <div class="mainTitle">
-    	Rock Paper Scissors!!!
-
+        Rock Paper Scissors!!!
     </div>
     <div class="setNameDiv">
         <form>
-            <input type="text">
-            <button type="submit">Start</button>
+            <input type="text" id="usernameBox">
+            <button type="submit" id="start">Start</button>
         </form>
     </div>
     <div class="gameText"></div>
-    <div class="playerOne"> Im Player One Div</div>
-    <div class="playerTwo">I'm Player Two Div</div>
+    <div class="playerOne">
+        <button class="choice rock">Rock</button>
+        <button class="choice paper">Paper</button>
+        <button class="choice scissors">Scissors</button>
+    </div>
+    <div class="playerTwo">
+    	<button class="choice rock">Rock</button>
+        <button class="choice paper">Paper</button>
+        <button class="choice scissors">Scissors</button>
+	</div>
     <div class="chatDiv">
         <form>
-            <input type="text">
-            <button type="submit">Send</button>
+            <input type="text" id="chatBox">
+            <button type="submit" id="sendChat">Send</button>
         </form>
     </div>
     <script src="assets/script.js"></script>
